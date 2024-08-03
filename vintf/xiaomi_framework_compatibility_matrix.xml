@@ -5,7 +5,6 @@
 <compatibility-matrix version="1.0" type="framework">
     <hal format="hidl" optional="true">
         <name>com.fingerprints.extension</name>
-        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IFingerprintAuthenticator</name>
@@ -49,11 +48,62 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.focaltech.fingerprint</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFocalFingerprintService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <version>2.1</version>
+        <interface>
+            <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IGoodixFingerprintDaemonExt</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IGoodixFingerprintDaemonFido</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IGoodixFingerprintDaemonHbd</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.goodix.hardware.fingerprintextension</name>
-        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IGoodixBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.silead.hardware.fingerprintext</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISileadFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.synaptics.fingerprints.interfaces.extensions</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFpCollection</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>INavigation</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISensorTest</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -78,6 +128,14 @@
         <version>1.0</version>
         <interface>
             <name>IDisplayFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.fingerprintextension</name>
+        <version>1.0</version>
+        <interface>
+            <name>IXiaomiFingerprint</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -110,6 +168,14 @@
         <version>1.0-1</version>
         <interface>
             <name>IMlipayService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.motor</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMotor</name>
             <instance>default</instance>
         </interface>
     </hal>
